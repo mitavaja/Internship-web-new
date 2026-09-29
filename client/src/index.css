@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.brand-mark { background: linear-gradient(135deg, #ffad1f, #e33a22); color: #fff; }
+
+.Toastify__toast { border-radius: 14px; font-size: 13px; font-weight: 700; }
+.Toastify__toast--success { background: #16805b; }
+.Toastify__toast--error { background: #c7372f; }
+.Toastify__toast--info { background: #c76216; }
+
+button[class*="bg-blue-600"], a[class*="bg-blue-600"] { background-color: #ed4b21 !important; }
+button[class*="bg-blue-700"], a[class*="bg-blue-700"] { background-color: #d83b1c !important; }
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

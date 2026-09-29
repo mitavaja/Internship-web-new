@@ -1,0 +1,51 @@
+const express = require('express');
+const router = express.Router();
+
+const authRoutes = require('./authRoutes');
+const userRoutes = require('./userRoutes');
+const studentRoutes = require('./studentRoutes');
+const teacherRoutes = require('./teacherRoutes');
+const internshipRoutes = require('./internshipRoutes');
+const batchRoutes = require('./batchRoutes');
+const taskRoutes = require('./taskRoutes');
+const submissionRoutes = require('./submissionRoutes');
+const attendanceRoutes = require('./attendanceRoutes');
+const leaveRoutes = require('./leaveRoutes');
+const resultRoutes = require('./resultRoutes');
+const announcementRoutes = require('./announcementRoutes');
+const notificationRoutes = require('./notificationRoutes');
+const certificateRoutes = require('./certificateRoutes');
+const documentRoutes = require('./documentRoutes');
+const paymentRoutes = require('./paymentRoutes');
+const meetingRoutes = require('./meetingRoutes');
+const messageRoutes = require('./messageRoutes');
+const activityLogRoutes = require('./activityLogRoutes');
+const settingsRoutes = require('./settingsRoutes');
+const dashboardRoutes = require('./dashboardRoutes');
+const uploadRoutes = require('./uploadRoutes');
+
+// Mount routes
+router.use('/auth', authRoutes);
+router.use('/users', userRoutes);
+router.use('/students', studentRoutes);
+router.use('/teachers', teacherRoutes);
+router.use('/internships', internshipRoutes);
+router.use('/batches', batchRoutes);
+router.use('/tasks', taskRoutes);
+router.use('/submissions', submissionRoutes);
+router.use('/attendance', attendanceRoutes);
+router.use('/leaves', leaveRoutes);
+router.use('/results', resultRoutes);
+router.use('/announcements', announcementRoutes);
+router.use('/notifications', notificationRoutes);
+router.use('/certificates', certificateRoutes);
+router.use('/documents', documentRoutes);
+router.use('/payments', paymentRoutes);
+router.use('/meetings', meetingRoutes);
+router.use('/messages', messageRoutes);
+router.use('/activity-logs', activityLogRoutes);
+router.use('/settings', settingsRoutes);
+router.use('/dashboard', dashboardRoutes);
+router.use('/upload', uploadRoutes);
+
+module.exports = router;
